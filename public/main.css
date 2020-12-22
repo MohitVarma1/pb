@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+}
+
+/*body {
+    font-size: 10px;
+    font-family: Tahoma, Arial;
+}*/
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 10px;
+    width: relative;
+    height: 500px;
+    position: relative;
+  }
+
+svg {
+	width: 100%;
+	height: 100%;
+}
+
+path.slice{
+	stroke-width:2px;
+}
+
+polyline{
+	opacity: .3;
+	stroke: black;
+	stroke-width: 2px;
+	fill: none;
+}
+nav.menu {
+    width: 100%;
+    background-color: #4d5791;
+    height: 44px;
+    padding: 0 40px;
+}
+
+nav.menu ul,
+nav.menu ul li {
+    margin: 0;
+    padding: 0 ;
+    list-style: none;
+    display: inline-block;
+}
+
+nav.menu ul li a {
+    display: block;
+    padding: 0 20px;
+    line-height: 44px;
+    font-size: 1.4em;
+    text-decoration: none;
+    color: #fff;
+    margin: 0;
+}
+
+nav.menu ul li a:hover  {
+    background-color: white;
+    color: #4d5791;
+}
+
+header.hero {
+    height: 350px;
+    background-color: #b4c6f0;
+    background-image: url('bg.png');
+    background-size: 400px;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    padding-top: 40px;
+}
+
+header.hero h1,
+header.hero h2 {
+    text-align: center;
+    margin: 0;
+}
+
+header.hero h1 {
+    color: #fff;
+    font-size: 4.2em;
+    margin-bottom: 20px;
+}
+
+header.hero h2 {
+    color: #4d5791;
+}
+
+.container {
+    padding: 40px;
+    width: 100%;
+}
+
+.page-area {
+    max-width: 768px;
+    display: inline-block;
+}
+
+footer.bottom {
+    height: 50px;
+    background-color: #b4c6f0;
+    padding: 40px;
+}
+
+.center {
+    text-align: center;
+}
+
+.container div.text-box {
+    display: inline-block;
+    width: 100%;
+    max-width: 340px;
+    text-align: justify;
+    margin: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    .container .div.text-box {
+        margin: 10px;
+    }
+}
+<footer class="bottom" aria-label="footer of page">
+       
+    <div class="center" aria-label="footer of page">
+        All rights reserved &copy; SS
+        
+       <div>
+<ul class="social-icons">
+<li>
+    <a target="_blank" title="Facebook" href="https://www.facebook.com/username">
+        <i class="fa fa-facebook fa-1x"></i><span>Facebook</span>
+    </a>
+
+<li>
+    <a target="_blank" title="Google+" href="http://google.com/+username">
+        <i class="fa fa-google-plus fa-1x"></i><span>Google+</span>
+    </a>
+</li>
+<li>
+    <a target="_blank" title="Twitter" href="http://www.twitter.com/username">
+        <i class="fa fa-twitter fa-1x"></i><span>Twitter</span>
+    </a>
+</li>
+<li>
+    <a target="_blank" title="Instagram" href="http://www.instagram.com/username">
+        <i class="fa fa-instagram fa-1x"></i><span>Instagram</span>
+    </a>
+</li>
+<li>
+    <a target="_blank" title="behance" href="http://www.behance.net">
+        <i class="fa fa-behance fa-1x"></i><span>Behance</span>
+    </a>
+</li>
+</ul>
+
+    </div>
+</footer>
