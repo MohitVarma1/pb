@@ -15,11 +15,11 @@
                         {"title":"Electricity",
                             "budget":50
                             },
-                            {"title":"Water",
-                                "budget":50
+                            {"title":"Insurance",
+                                "budget":60
                                 },
-                                {"title":"Grocery",
-                                    "budget":110
+                                {"title":"Education",
+                                    "budget":120
                                     }
                                 ]
                             }
