@@ -2,9 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="keywords" content="HTML, CSS, JavaScript">
-    <!-- This is an SEO Change: added metatag for keywords -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML, CSS, JavaScript"><meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Budget</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="main.css">
@@ -16,9 +14,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js" integrity="sha512-quHCp3WbBNkwLfYUMd+KwBAgpVukJu5MncuQaWXgCrfgcxCJAq/fo+oqrRKOj+UKEmyMCG3tb8RB63W+EmrOBg==" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js" integrity="sha512-s+xg36jbIujB2S2VKfpGmlC3T5V2TF3lY48DX7u2r9XzGzgPsa6wTpOQA7J9iffvdeBN0q9tKzRxVxw1JviZPg==" crossorigin="anonymous"></script>
     <script src="https://d3js.org/d3.v3.min.js"></script>
-    <nav class="menu">
-        <!-- This is a Semantic HTML Change: changed div to nav -->
-        <ul>
+    <nav class="menu"><ul>
             <li><a href="/">Home</a></li>
             <li><a href="dashboard.html">Dashboard</a></li>
             <li><a href="configure.html">Configure</a></li>
@@ -104,10 +100,7 @@
   </section>
   <!--End of Clients-->
     
-    <header class="hero" aria-label="header of page">
-        <!-- This is an A11y Change: added aria-label to describe purpose of class -->
-        <!-- This is a Semantic HTML Change: changed div to header-->
-        <h1>Personal Budget</h1>
+    <header class="hero" aria-label="header of page"><h1>Personal Budget</h1>
         <h2>A personal-budget management app</h2>
         
     </header>
@@ -163,11 +156,10 @@
                 headers: { Authorization: `Bearer ${token}` }
             })
             .then(res => {
-                //document.getElementById('username').value = '';
+           
                 document.getElementById('budgetName').value = '';
                 document.getElementById('budgetSpent').value = '';
-                document.getElementById('month').value = '';
-                //token = res.data.token
+                document.getElementById('month').value = '';\
             });
         }
     }
@@ -213,8 +205,7 @@
                     token = res.data.token;
                     localStorage.setItem('jwt', token);
                     window.location.href = '/expense.html';
-                    //getDashboard();
-                    //getSettings()
+                   
                 }
             });
         }
